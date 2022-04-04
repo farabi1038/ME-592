@@ -1,0 +1,196 @@
+Using: cuda
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 16, 198, 198]             448
+              ReLU-2         [-1, 16, 198, 198]               0
+            Conv2d-3         [-1, 16, 196, 196]           2,320
+              ReLU-4         [-1, 16, 196, 196]               0
+         MaxPool2d-5           [-1, 16, 98, 98]               0
+            Conv2d-6           [-1, 32, 96, 96]           4,640
+              ReLU-7           [-1, 32, 96, 96]               0
+            Conv2d-8           [-1, 32, 94, 94]           9,248
+              ReLU-9           [-1, 32, 94, 94]               0
+        MaxPool2d-10           [-1, 32, 47, 47]               0
+           Conv2d-11           [-1, 64, 45, 45]          18,496
+             ReLU-12           [-1, 64, 45, 45]               0
+           Conv2d-13           [-1, 64, 43, 43]          36,928
+             ReLU-14           [-1, 64, 43, 43]               0
+        MaxPool2d-15           [-1, 64, 21, 21]               0
+           Conv2d-16          [-1, 128, 19, 19]          73,856
+             ReLU-17          [-1, 128, 19, 19]               0
+           Conv2d-18          [-1, 128, 17, 17]         147,584
+             ReLU-19          [-1, 128, 17, 17]               0
+        MaxPool2d-20            [-1, 128, 8, 8]               0
+           Conv2d-21            [-1, 256, 6, 6]         295,168
+             ReLU-22            [-1, 256, 6, 6]               0
+           Conv2d-23            [-1, 256, 4, 4]         590,080
+             ReLU-24            [-1, 256, 4, 4]               0
+        MaxPool2d-25            [-1, 256, 2, 2]               0
+          Flatten-26                 [-1, 1024]               0
+          Dropout-27                 [-1, 1024]               0
+           Linear-28                  [-1, 256]         262,400
+             ReLU-29                  [-1, 256]               0
+          Dropout-30                  [-1, 256]               0
+           Linear-31                   [-1, 10]           2,570
+================================================================
+Total params: 1,443,738
+Trainable params: 1,443,738
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.46
+Forward/backward pass size (MB): 35.04
+Params size (MB): 5.51
+Estimated Total Size (MB): 41.00
+----------------------------------------------------------------
+Epoch: [0], Test Loss: 2.2867, Accuracy: 0.12, Time: 15.68 sec
+Epoch: [1], Test Loss: 1.8712, Accuracy: 0.29, Time: 15.77 sec
+
+
+Epoch: [2], Test Loss: 1.4849, Accuracy: 0.47, Time: 15.83 sec
+
+
+Epoch: [3], Test Loss: 1.2810, Accuracy: 0.53, Time: 15.93 sec
+
+
+Epoch: [4], Test Loss: 1.2489, Accuracy: 0.56, Time: 15.84 sec
+
+
+Epoch: [5], Test Loss: 1.1893, Accuracy: 0.57, Time: 15.79 sec
+
+
+Epoch: [6], Test Loss: 1.1376, Accuracy: 0.59, Time: 15.87 sec
+
+
+Epoch: [7], Test Loss: 1.0748, Accuracy: 0.61, Time: 15.76 sec
+
+
+Epoch: [8], Test Loss: 1.0256, Accuracy: 0.63, Time: 15.82 sec
+
+
+Epoch: [9], Test Loss: 1.0963, Accuracy: 0.61, Time: 15.95 sec
+
+
+Epoch: [10], Test Loss: 0.9692, Accuracy: 0.65, Time: 15.86 sec
+
+
+Epoch: [11], Test Loss: 0.8731, Accuracy: 0.68, Time: 15.79 sec
+
+
+Epoch: [12], Test Loss: 0.8593, Accuracy: 0.69, Time: 15.81 sec
+
+
+Epoch: [13], Test Loss: 0.8237, Accuracy: 0.70, Time: 15.87 sec
+
+
+Epoch: [14], Test Loss: 0.7559, Accuracy: 0.72, Time: 15.89 sec
+
+
+Epoch: [15], Test Loss: 0.7562, Accuracy: 0.72, Time: 15.93 sec
+
+
+Epoch: [16], Test Loss: 0.7583, Accuracy: 0.72, Time: 15.85 sec
+
+
+Epoch: [17], Test Loss: 0.7000, Accuracy: 0.75, Time: 15.89 sec
+
+
+Epoch: [18], Test Loss: 0.6854, Accuracy: 0.75, Time: 15.83 sec
+
+
+Epoch: [19], Test Loss: 0.6799, Accuracy: 0.75, Time: 15.84 sec
+
+
+Epoch: [20], Test Loss: 0.6714, Accuracy: 0.77, Time: 15.90 sec
+
+
+Epoch: [21], Test Loss: 0.6693, Accuracy: 0.76, Time: 15.85 sec
+
+
+Epoch: [22], Test Loss: 0.6406, Accuracy: 0.77, Time: 15.82 sec
+
+
+Epoch: [23], Test Loss: 0.6133, Accuracy: 0.78, Time: 15.81 sec
+
+
+Epoch: [24], Test Loss: 0.6292, Accuracy: 0.77, Time: 15.84 sec
+
+
+Epoch: [25], Test Loss: 0.6025, Accuracy: 0.78, Time: 15.83 sec
+
+
+Epoch: [26], Test Loss: 0.5728, Accuracy: 0.80, Time: 15.87 sec
+
+
+Epoch: [27], Test Loss: 0.5876, Accuracy: 0.79, Time: 15.87 sec
+
+
+Epoch: [28], Test Loss: 0.5574, Accuracy: 0.80, Time: 15.84 sec
+
+
+Epoch: [29], Test Loss: 0.5834, Accuracy: 0.79, Time: 15.91 sec
+
+
+Epoch: [30], Test Loss: 0.5366, Accuracy: 0.81, Time: 15.86 sec
+
+
+Epoch: [31], Test Loss: 0.5497, Accuracy: 0.81, Time: 15.86 sec
+
+
+Epoch: [32], Test Loss: 0.5314, Accuracy: 0.81, Time: 15.93 sec
+
+
+Epoch: [33], Test Loss: 0.5178, Accuracy: 0.82, Time: 15.93 sec
+
+
+Epoch: [34], Test Loss: 0.5039, Accuracy: 0.83, Time: 15.89 sec
+
+
+Epoch: [35], Test Loss: 0.5102, Accuracy: 0.83, Time: 15.92 sec
+
+
+Epoch: [36], Test Loss: 0.5013, Accuracy: 0.81, Time: 15.93 sec
+
+
+Epoch: [37], Test Loss: 0.4830, Accuracy: 0.83, Time: 15.86 sec
+
+
+Epoch: [38], Test Loss: 0.5028, Accuracy: 0.82, Time: 15.90 sec
+
+
+Epoch: [39], Test Loss: 0.4974, Accuracy: 0.82, Time: 15.91 sec
+
+
+Epoch: [40], Test Loss: 0.5302, Accuracy: 0.82, Time: 15.82 sec
+
+
+Epoch: [41], Test Loss: 0.4956, Accuracy: 0.83, Time: 15.89 sec
+
+
+Epoch: [42], Test Loss: 0.5042, Accuracy: 0.82, Time: 15.82 sec
+
+
+Epoch: [43], Test Loss: 0.5014, Accuracy: 0.83, Time: 15.86 sec
+
+
+Epoch: [44], Test Loss: 0.4776, Accuracy: 0.83, Time: 15.90 sec
+
+
+Epoch: [45], Test Loss: 0.4530, Accuracy: 0.84, Time: 15.90 sec
+
+
+Epoch: [46], Test Loss: 0.4731, Accuracy: 0.83, Time: 15.86 sec
+
+
+Epoch: [47], Test Loss: 0.5136, Accuracy: 0.81, Time: 15.86 sec
+
+
+Epoch: [48], Test Loss: 0.4519, Accuracy: 0.84, Time: 15.92 sec
+
+
+Epoch: [49], Test Loss: 0.4800, Accuracy: 0.84, Time: 15.90 sec
+
+
+Epoch: [50], Test Loss: 0.4942, Accuracy: 0.82, Time: 15.90 sec
+
+

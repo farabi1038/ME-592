@@ -1,0 +1,21 @@
+Using: cuda
+Traceback (most recent call last):
+  File "Task1.py", line 96, in <module>
+    summary(model, (3, 300, 300))
+  File "/home/reuel/anaconda3/envs/ME592/lib/python3.7/site-packages/torchsummary/torchsummary.py", line 72, in summary
+    model(*x)
+  File "/home/reuel/anaconda3/envs/ME592/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "Task1.py", line 90, in forward
+    x = self.model(x)
+  File "/home/reuel/anaconda3/envs/ME592/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/reuel/anaconda3/envs/ME592/lib/python3.7/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/home/reuel/anaconda3/envs/ME592/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1128, in _call_impl
+    result = forward_call(*input, **kwargs)
+  File "/home/reuel/anaconda3/envs/ME592/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/reuel/anaconda3/envs/ME592/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 444, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: cuDNN error: CUDNN_STATUS_NOT_INITIALIZED

@@ -1,0 +1,207 @@
+python: can't open file 'Task2': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "Task2.py", line 7, in <module>
+    from IPython.display import display
+  File "/home/reuel/anaconda3/lib/python3.8/site-packages/IPython/__init__.py", line 52, in <module>
+    from .terminal.embed import embed
+  File "/home/reuel/anaconda3/lib/python3.8/site-packages/IPython/terminal/embed.py", line 16, in <module>
+    from IPython.terminal.interactiveshell import TerminalInteractiveShell
+  File "/home/reuel/anaconda3/lib/python3.8/site-packages/IPython/terminal/interactiveshell.py", line 34, in <module>
+    from prompt_toolkit.formatted_text import PygmentsTokens
+ModuleNotFoundError: No module named 'prompt_toolkit.formatted_text'
+Using: cuda
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 16, 254, 254]             448
+              ReLU-2         [-1, 16, 254, 254]               0
+            Conv2d-3         [-1, 16, 252, 252]           2,320
+              ReLU-4         [-1, 16, 252, 252]               0
+         MaxPool2d-5         [-1, 16, 126, 126]               0
+            Conv2d-6         [-1, 32, 124, 124]           4,640
+              ReLU-7         [-1, 32, 124, 124]               0
+            Conv2d-8         [-1, 32, 122, 122]           9,248
+              ReLU-9         [-1, 32, 122, 122]               0
+        MaxPool2d-10           [-1, 32, 61, 61]               0
+           Conv2d-11           [-1, 64, 59, 59]          18,496
+             ReLU-12           [-1, 64, 59, 59]               0
+           Conv2d-13           [-1, 64, 57, 57]          36,928
+             ReLU-14           [-1, 64, 57, 57]               0
+        MaxPool2d-15           [-1, 64, 28, 28]               0
+           Conv2d-16          [-1, 128, 26, 26]          73,856
+             ReLU-17          [-1, 128, 26, 26]               0
+           Conv2d-18          [-1, 128, 24, 24]         147,584
+             ReLU-19          [-1, 128, 24, 24]               0
+        MaxPool2d-20          [-1, 128, 12, 12]               0
+           Conv2d-21          [-1, 256, 10, 10]         295,168
+             ReLU-22          [-1, 256, 10, 10]               0
+           Conv2d-23            [-1, 256, 8, 8]         590,080
+             ReLU-24            [-1, 256, 8, 8]               0
+        MaxPool2d-25            [-1, 256, 4, 4]               0
+          Flatten-26                 [-1, 4096]               0
+          Dropout-27                 [-1, 4096]               0
+           Linear-28                  [-1, 256]       1,048,832
+             ReLU-29                  [-1, 256]               0
+          Dropout-30                  [-1, 256]               0
+           Linear-31                   [-1, 10]           2,570
+================================================================
+Total params: 2,230,170
+Trainable params: 2,230,170
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.75
+Forward/backward pass size (MB): 59.16
+Params size (MB): 8.51
+Estimated Total Size (MB): 68.42
+----------------------------------------------------------------
+Epoch: [0], Test Loss: 2.2907, Accuracy: 0.29, Time: 18.04 sec
+Epoch: [1], Test Loss: 1.7276, Accuracy: 0.34, Time: 17.98 sec
+
+
+Epoch: [2], Test Loss: 1.3752, Accuracy: 0.50, Time: 18.01 sec
+
+
+Epoch: [3], Test Loss: 1.3316, Accuracy: 0.53, Time: 18.17 sec
+
+
+Epoch: [4], Test Loss: 1.2501, Accuracy: 0.55, Time: 18.09 sec
+
+
+Epoch: [5], Test Loss: 1.1926, Accuracy: 0.57, Time: 18.16 sec
+
+
+Epoch: [6], Test Loss: 1.1711, Accuracy: 0.60, Time: 18.21 sec
+
+
+Epoch: [7], Test Loss: 1.0771, Accuracy: 0.62, Time: 18.24 sec
+
+
+Epoch: [8], Test Loss: 0.9852, Accuracy: 0.66, Time: 18.22 sec
+
+
+Epoch: [9], Test Loss: 0.9024, Accuracy: 0.69, Time: 18.12 sec
+
+
+Epoch: [10], Test Loss: 0.8202, Accuracy: 0.71, Time: 18.12 sec
+
+
+Epoch: [11], Test Loss: 0.7979, Accuracy: 0.73, Time: 18.15 sec
+
+
+Epoch: [12], Test Loss: 0.7672, Accuracy: 0.74, Time: 18.29 sec
+
+
+Epoch: [13], Test Loss: 0.7349, Accuracy: 0.74, Time: 18.12 sec
+
+
+Epoch: [14], Test Loss: 0.7529, Accuracy: 0.75, Time: 18.16 sec
+
+
+Epoch: [15], Test Loss: 0.7202, Accuracy: 0.75, Time: 18.22 sec
+
+
+Epoch: [16], Test Loss: 0.6648, Accuracy: 0.76, Time: 18.12 sec
+
+
+Epoch: [17], Test Loss: 0.7345, Accuracy: 0.74, Time: 18.14 sec
+
+
+Epoch: [18], Test Loss: 0.6959, Accuracy: 0.76, Time: 18.21 sec
+
+
+Epoch: [19], Test Loss: 0.7141, Accuracy: 0.75, Time: 18.15 sec
+
+
+Epoch: [20], Test Loss: 0.6453, Accuracy: 0.77, Time: 18.18 sec
+
+
+Epoch: [21], Test Loss: 0.6610, Accuracy: 0.77, Time: 18.00 sec
+
+
+Epoch: [22], Test Loss: 0.6655, Accuracy: 0.77, Time: 18.05 sec
+
+
+Epoch: [23], Test Loss: 0.6246, Accuracy: 0.78, Time: 18.06 sec
+
+
+Epoch: [24], Test Loss: 0.6165, Accuracy: 0.79, Time: 18.01 sec
+
+
+Epoch: [25], Test Loss: 0.6067, Accuracy: 0.78, Time: 18.09 sec
+
+
+Epoch: [26], Test Loss: 0.6422, Accuracy: 0.79, Time: 18.19 sec
+
+
+Epoch: [27], Test Loss: 0.5853, Accuracy: 0.80, Time: 18.33 sec
+
+
+Epoch: [28], Test Loss: 0.5964, Accuracy: 0.79, Time: 18.21 sec
+
+
+Epoch: [29], Test Loss: 0.5880, Accuracy: 0.79, Time: 18.17 sec
+
+
+Epoch: [30], Test Loss: 0.5787, Accuracy: 0.80, Time: 18.16 sec
+
+
+Epoch: [31], Test Loss: 0.5794, Accuracy: 0.80, Time: 18.15 sec
+
+
+Epoch: [32], Test Loss: 0.5928, Accuracy: 0.79, Time: 18.15 sec
+
+
+Epoch: [33], Test Loss: 0.5425, Accuracy: 0.81, Time: 18.29 sec
+
+
+Epoch: [34], Test Loss: 0.5510, Accuracy: 0.81, Time: 18.14 sec
+
+
+Epoch: [35], Test Loss: 0.6275, Accuracy: 0.78, Time: 18.26 sec
+
+
+Epoch: [36], Test Loss: 0.5606, Accuracy: 0.80, Time: 18.08 sec
+
+
+Epoch: [37], Test Loss: 0.5466, Accuracy: 0.81, Time: 18.26 sec
+
+
+Epoch: [38], Test Loss: 0.5531, Accuracy: 0.80, Time: 18.16 sec
+
+
+Epoch: [39], Test Loss: 0.5468, Accuracy: 0.81, Time: 18.18 sec
+
+
+Epoch: [40], Test Loss: 0.5605, Accuracy: 0.81, Time: 18.14 sec
+
+
+Epoch: [41], Test Loss: 0.5195, Accuracy: 0.82, Time: 18.22 sec
+
+
+Epoch: [42], Test Loss: 0.5168, Accuracy: 0.82, Time: 18.10 sec
+
+
+Epoch: [43], Test Loss: 0.5157, Accuracy: 0.82, Time: 18.26 sec
+
+
+Epoch: [44], Test Loss: 0.5058, Accuracy: 0.82, Time: 18.19 sec
+
+
+Epoch: [45], Test Loss: 0.5005, Accuracy: 0.82, Time: 18.10 sec
+
+
+Epoch: [46], Test Loss: 0.5391, Accuracy: 0.80, Time: 18.09 sec
+
+
+Epoch: [47], Test Loss: 0.5057, Accuracy: 0.82, Time: 18.06 sec
+
+
+Epoch: [48], Test Loss: 0.4970, Accuracy: 0.82, Time: 18.06 sec
+
+
+Epoch: [49], Test Loss: 0.4901, Accuracy: 0.82, Time: 18.07 sec
+
+
+Epoch: [50], Test Loss: 0.4938, Accuracy: 0.83, Time: 18.16 sec
+
+

@@ -1,0 +1,88 @@
+Using: cuda
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 16, 398, 398]             448
+              ReLU-2         [-1, 16, 398, 398]               0
+            Conv2d-3         [-1, 16, 396, 396]           2,320
+              ReLU-4         [-1, 16, 396, 396]               0
+         MaxPool2d-5         [-1, 16, 198, 198]               0
+            Conv2d-6         [-1, 32, 196, 196]           4,640
+              ReLU-7         [-1, 32, 196, 196]               0
+            Conv2d-8         [-1, 32, 194, 194]           9,248
+              ReLU-9         [-1, 32, 194, 194]               0
+        MaxPool2d-10           [-1, 32, 97, 97]               0
+           Conv2d-11           [-1, 64, 95, 95]          18,496
+             ReLU-12           [-1, 64, 95, 95]               0
+           Conv2d-13           [-1, 64, 93, 93]          36,928
+             ReLU-14           [-1, 64, 93, 93]               0
+        MaxPool2d-15           [-1, 64, 46, 46]               0
+           Conv2d-16          [-1, 128, 44, 44]          73,856
+             ReLU-17          [-1, 128, 44, 44]               0
+           Conv2d-18          [-1, 128, 42, 42]         147,584
+             ReLU-19          [-1, 128, 42, 42]               0
+        MaxPool2d-20          [-1, 128, 21, 21]               0
+           Conv2d-21          [-1, 256, 19, 19]         295,168
+             ReLU-22          [-1, 256, 19, 19]               0
+           Conv2d-23          [-1, 256, 17, 17]         590,080
+             ReLU-24          [-1, 256, 17, 17]               0
+        MaxPool2d-25            [-1, 256, 8, 8]               0
+          Flatten-26                [-1, 16384]               0
+          Dropout-27                [-1, 16384]               0
+           Linear-28                  [-1, 256]       4,194,560
+             ReLU-29                  [-1, 256]               0
+          Dropout-30                  [-1, 256]               0
+           Linear-31                   [-1, 10]           2,570
+================================================================
+Total params: 5,375,898
+Trainable params: 5,375,898
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 1.83
+Forward/backward pass size (MB): 150.05
+Params size (MB): 20.51
+Estimated Total Size (MB): 172.38
+----------------------------------------------------------------
+Epoch: [0], Test Loss: 2.3168, Accuracy: 0.06, Time: 17.85 sec
+Epoch: [1], Test Loss: 1.6201, Accuracy: 0.42, Time: 17.82 sec
+
+
+Epoch: [2], Test Loss: 1.3611, Accuracy: 0.52, Time: 17.80 sec
+
+
+Epoch: [3], Test Loss: 1.2923, Accuracy: 0.54, Time: 17.78 sec
+
+
+Epoch: [4], Test Loss: 1.2169, Accuracy: 0.58, Time: 17.78 sec
+
+
+Epoch: [5], Test Loss: 1.0923, Accuracy: 0.61, Time: 17.74 sec
+
+
+Epoch: [6], Test Loss: 0.9622, Accuracy: 0.67, Time: 17.73 sec
+
+
+Epoch: [7], Test Loss: 0.9092, Accuracy: 0.69, Time: 17.76 sec
+
+
+Epoch: [8], Test Loss: 0.9199, Accuracy: 0.69, Time: 17.86 sec
+
+
+Epoch: [9], Test Loss: 0.8129, Accuracy: 0.71, Time: 17.74 sec
+
+
+Epoch: [10], Test Loss: 0.8632, Accuracy: 0.71, Time: 17.78 sec
+
+
+Epoch: [11], Test Loss: 0.7832, Accuracy: 0.73, Time: 17.83 sec
+
+
+Epoch: [12], Test Loss: 0.8013, Accuracy: 0.73, Time: 17.79 sec
+
+
+Epoch: [13], Test Loss: 0.7816, Accuracy: 0.73, Time: 17.78 sec
+
+
+Epoch: [14], Test Loss: 0.7244, Accuracy: 0.75, Time: 17.78 sec
+
+
